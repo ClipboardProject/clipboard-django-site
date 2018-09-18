@@ -1,16 +1,16 @@
 {% extends 'event/base.html' %}
 
 {% block body %}
-	<h1>{{ event.name }}</h1>
-	<h2>{{ event.date }}</h2>
-	<h3>{{ event.location }}</h3>
+	<h1>{{ event.title }}</h1>
+	<h2>{{ event.start_date }}</h2>
+	<h3>{{ event.address }}</h3>
 	<p>{{ event.description }}</p>
-	{% if event.cost == 0.0 %}
+	{% if event.price == 0.0 %}
 		<p>Free Event</p>
 	{% else %}
-		<p>Cost ${{ event.cost }}</p>
+		<p>Cost ${{ event.price }}</p>
 	{% endif %}
 	<p>{{ event.address }}</p>
-	<p>{{ event.startTime }} - {{ event.endTime }}</p>
-	<p><a href="{{ event.eventLink }}" target="_blank">Read more</a></p>
+	<p>{{ event.start_time }} - {{ event.end_time }}</p>
+	<p><a href="{{ event.url }}" target="_blank">Read more</a></p>
 {% endblock %}

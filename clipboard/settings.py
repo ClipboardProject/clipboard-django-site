@@ -25,7 +25,7 @@ SECRET_KEY = 'g-ipo79-u0*b-2^^eafv37^ljw5ci!9_kjkaf(r-5d1e7umlah'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['ec2-18-221-163-213.us-east-2.compute.amazonaws.com', '18.221.163.213']
+ALLOWED_HOSTS = ['ec2-18-221-163-213.us-east-2.compute.amazonaws.com', '18.221.163.213', 'localhost', '[::1]', '127.0.0.1']
 
 
 # Application definition
@@ -75,14 +75,14 @@ WSGI_APPLICATION = 'clipboard.wsgi.application'
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'clipboard',
-	'USER': 'admin',
-	'PASSWORD': 'gH69!KLqS7g7qATR',
-	'HOST': 'localhost',
-	'PORT': '',
-    }
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.postgresql_psycopg2',
+    #     'NAME': 'clipboard',
+	# 'USER': 'postgres',
+	# 'PASSWORD': 'gH69!KLqS7g7qATR',
+	# 'HOST': '192.168.99.100',
+	# 'PORT': '',
+    # }
 }
 
 
